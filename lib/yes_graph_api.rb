@@ -1,5 +1,3 @@
-require "yes_graph_api/version"
-
 class YesGraphAPI
   include ::HTTParty
   format :json
@@ -9,7 +7,7 @@ class YesGraphAPI
       "Authorization" => "Bearer #{secret_key}",
     "Content-Type" => "application/json",
     "Accept" => 'application/json'
-               }
+              }
   end
 
   def test
